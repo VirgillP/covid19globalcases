@@ -8,3 +8,4 @@ first graph using plotting.
 Added PlotThemes
 Uninstalled Plotly as it conflicts with the package Plots
 Added more notes to my plots graphs
+Indent code lines
