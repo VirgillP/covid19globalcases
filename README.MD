@@ -8,7 +8,7 @@ Using covid19 data from the Github COVID-19 Data Repository at Johns Hopkins Uni
 
 ## Installation
 
-The documentation on Julia (https://julialang.org/) is well documented making installation straightforward for the platform it is being used on. You should be familiar with the Windows CommandLine and MacOS- and Linux Terminal because packages and instructions are completed in those ways. With this project I use Atom with Juno AKA JuliaPro and Visual Studio Code interchangeably. There is much on the internet to learn about the Julia programming language. Online courses and videos, lectures from Julia Academy and reading material are part of many resources one can make use of. And feel free to engage with the Julia community to learn more.
+The documentation on Julia (https://julialang.org/) is well documented making installation straightforward for the platform it is being used on. You should be familiar with the Windows CommandLine and MacOS- and Linux Terminal because packages and instructions are completed in those ways. With this project I use two build systems; Atom with Juno AKA JuliaPro and Visual Studio Code interchangeably. There is much on the internet to learn about the Julia programming language. Online courses and videos, lectures from Julia Academy and reading material are part of many resources one can make use of. And feel free to engage with the Julia community to learn more.
 
 
 ## Usage

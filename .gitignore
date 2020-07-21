@@ -2,7 +2,7 @@
 *.csv
 # ignore all files in any directory named build
 .ipynb_checkpoints/
-.vscode
+.vscode/
 .DS_Store
 # ignore all .json files
 *.json
