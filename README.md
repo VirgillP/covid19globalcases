@@ -61,21 +61,21 @@ And if all fails you can try the following instructions which works for me;
      `jupyter nbextension uninstall --user webio/main`
     `jupyter nbextension uninstall --user webio-jupyter-notebook`
  
- 5. Re-install the Jupyter Notebook extension:
+ 4. Re-install the Jupyter Notebook extension:
 
       `using WebIO`
       `WebIO.install_jupyter_nbextension()`
  
- 6. After you have re-installed the webIO open Julia REPL and enter the following command:
+ 5. After you have re-installed the webIO open Julia REPL and enter the following command:
  
      `/Users/your username/opt/miniconda3/bin/jupyter nbextension enable --user webio-jupyter-notebook`
   
   
-  7. The following should appear;
+  6. The following should appear;
             Enabling notebook extension webio-jupyter-notebook...
               - Validating: OK
  
- 8. Start your Jupyter Notebook and enjoy using widgets.
+ 7. Start your Jupyter Notebook and enjoy using widgets.
  
 
 ## Contributing
