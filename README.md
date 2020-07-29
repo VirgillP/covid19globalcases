@@ -1,13 +1,12 @@
 # About Julia programming language, in my own experience so far
-
 Julia is really easy to use and the syntax is amazingly user-friendly. I haven't seen odd or cryptic syntax that would leave me scratching my head for answers. Having coded in Ruby I can see the similarity in syntax as well. Much of Julia's functions are build in and the same can be said about the help documentation. Julia makes use of packages. These are build in functions, modules which freeing up the developer to focus on the problem at hand. Overall this is an amazing programming language to learn and experiment with. And yes it is open source too.
 
-# Covid19
 
+# Covid19
 Using covid19 data from the Github COVID-19 Data Repository at Johns Hopkins University) a plot graph can be presented with Julia. The final plotted graph is an attempt (the result of my home work so far) to achieve the result as presented with the Julia Academy Data Science online course.
 
-## Installation
 
+## Installation
 The documentation on Jupyter Notebook(https://jupyter.org/)is straightforward for the platform it is being used on. You should be familiar with the Windows CommandLine and MacOS- and Linux Terminal because packages and instructions can be achieved in those ways. With this project I use Atom with Juno AKA JuliaPro and Visual Studio Code interchangeably. There is much on the internet to learn about the Julia programming language. Online courses and videos, lectures from Julia Academy and reading material are part of many resources one can make use of. And feel free to engage with the Julia community to learn more.
 
 
@@ -22,29 +21,26 @@ These packages are installed once.
 
 I prefer to install these package through cmd or terminal before starting using them in my Jupyter Notebook.
 
-In your command line, after you have successfully installed Julia and adding it in your environment path, enter the following:
+In your command line, after you have successfully installed Julia and adding it in your environment path, enter the following commands:
 
-`> julia press enter/return)`
+`> julia press enter/return)` "This will bring you into Julia REPL"
 
 `> import Pkg (press enter/return)`
 
 `pkg.add("Interact")(press enter/return)`
 
-Repeat steps with additional packages
+Alternatively, once in Julia REPL you hit the `]` and enter `add Interact` which will the package as well.
 
 NB:
 With the package `Interact`you can make intuitive graphs. As far as I have tested this package it cooperates in Windows.
 On macOS (I use Catalina 10.15.4) however, when you use @manipulate to create widgets an error message appears saying that WebIO has not been detected, even though the WebIO package is installed. If your having issues getting a widget to work on your mac machine, try the following:
 
- Head to the weblink provided with the error message and read the documentation through following every given steps-`https://juliagizmos.github.io/WebIO.jl/latest/troubleshooting/not-detected/`
+ Head to the weblink provided with the error message and read the documentation provided -
+ `https://juliagizmos.github.io/WebIO.jl/latest/troubleshooting/not-detected/`
 
+And if all fails you can try the following instructions which works for me;
 
-And if all fails you can try the following instructions;
-
-
-
-1. Gracefully close any Jupyter Notebook session. This means go to File - Close and Halt.
-
+1. Gracefully close any Jupyter Notebook session. This means go to File - Close and Halt. Close your Julia REPL as well.
 
 2. In Terminal enter the following:
 `jupyter nbextension list` and you should see something similar if WebIO and configuration were installed;
@@ -63,26 +59,28 @@ And if all fails you can try the following instructions;
  3. Continue by entering the following commands in terminal as shown in the troubleshooting documentation:
  
      `jupyter nbextension uninstall --user webio/main`
-     
     `jupyter nbextension uninstall --user webio-jupyter-notebook`
  
+ 5. Re-install the Jupyter Notebook extension:
+
+      `using WebIO`
+      `WebIO.install_jupyter_nbextension()`
  
- 5. After you have re-installed the webIO open the Julia REPL and enter the following command:
+ 6. After you have re-installed the webIO open Julia REPL and enter the following command:
  
      `/Users/your username/opt/miniconda3/bin/jupyter nbextension enable --user webio-jupyter-notebook`
   
   
-  6. The following should appear;
+  7. The following should appear;
             Enabling notebook extension webio-jupyter-notebook...
               - Validating: OK
  
- 7. Start your Jupyter Notebook
- 
- After you have re-installed WebIO with step 4, a more detailed message should appear as in step 6. Even so do step as well 6 as well.
+ 8. Start your Jupyter Notebook and enjoy using widgets.
  
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
